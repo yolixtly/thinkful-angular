@@ -1,0 +1,18 @@
+<div class="container">
+	<form novalidate>
+		<section>
+			<label for="name">Name: </label>
+			<input type="text" name="name" id="name" placeholder="your name here" ng-model="inputName">
+		</section>
+		<section>
+			<label for="lastName">lastName: </label>
+			<input type="text" name="lastName" id="lastName" placeholder="your lastName here" ng-model="inputLastName">
+		</section>
+		<section>
+			<label for="email">email: </label>
+			<input type="text" name="email" id="email" placeholder="your email here" ng-model="inputEmail">
+		</section>
+		<button type="submit">Login now</button>
+	</form>
+	<div ng-transclude></div>
+</div>
