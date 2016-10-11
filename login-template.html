@@ -1,5 +1,5 @@
 <div class="container">
-	<form novalidate>
+	<form novalidate name="myStuffForm">
 		<section>
 			<label for="name">Name: </label>
 			<input type="text" name="name" id="name" placeholder="your name here" ng-model="inputName">
@@ -14,5 +14,10 @@
 		</section>
 		<button type="submit">Login now</button>
 	</form>
+	<div if="validation" ng-messages="myStuffForm.name.$potatoError" ng-if="myStuffForm.$submitted || !myStuffForm.name.$pristine ">
+		<div id="potatoError">
+		please type your name
+		</div>
+	</div>
 	<div ng-transclude></div>
 </div>

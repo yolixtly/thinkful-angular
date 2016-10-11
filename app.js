@@ -15,6 +15,13 @@ app.run(function($rootScope){
   };
 });
 
+
+app.run(function($rootScope){
+  $rootScope.valMsg = function(){
+    alert("please type your name");
+  };
+});
+
 app.directive('myGreet', function(){
 	return function($scope, element, attrs){
 		element.on('click', function(){
