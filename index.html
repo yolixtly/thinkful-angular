@@ -13,10 +13,11 @@
 
 <login>
 	<div>
-		my Name is {{ inputName + inputLastName}} and my email is {{ inputEmail }}.
+		my Name is {{ inputName + " " + inputLastName}} and my email is {{ inputEmail }}.
 	</div>
 </login>
 
+<button my-greet="sayHi()">Say Hello!</button>
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.0/angular-mocks.js"></script>
 <script src="app.js"></script>
